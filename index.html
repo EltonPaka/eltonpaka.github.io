@@ -58,9 +58,12 @@
     			window.location = url+'?'+params;
   			}
 		}
+
+
 		http.open('GET', 'https://cors-anywhere.herokuapp.com/'+url+'?'+params, true);
 		http.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
 		http.send();
+		console.log('calling api gateway');
 		  
 	});
 
